@@ -1,0 +1,18 @@
+nav{
+    font-weight: 500;
+
+}
+
+.navbar-toggler{
+    color: var(--background-color);
+}
+
+.nav-link{
+        &__active{
+            color: var(--link);
+        }
+}
+
+.navbar--image{
+    width: 1.563rem;
+}

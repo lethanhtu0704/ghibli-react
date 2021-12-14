@@ -1,0 +1,29 @@
+
+.not--found{
+  width: 100%;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &__text{
+        position: absolute;
+        font-size: 3rem;
+        text-align: center;
+       
+        bottom: 0;
+        transform: translateY(100%);
+        font-family: 'Merienda', cursive;
+  }
+  &__back{
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &__span{
+   
+}
+
+}
+.not--found img{
+    width: 20%;
+}

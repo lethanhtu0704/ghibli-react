@@ -1,0 +1,47 @@
+.character-background{
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:-5;
+  //center item 
+  display: flex;
+
+  align-items: center;
+  }
+.character-custom {
+  position: relative;
+  font-size: 1.1rem;
+  background-color: var(--background-color);
+  opacity: 70%;
+}
+
+.character{
+&-field{
+  &__name{
+    transform: translateX(-20%);
+  }
+}
+&-custom {
+  position: relative;
+  font-size: 1.1rem;
+  background-color: var(--background-color);
+  opacity: 70%;
+  &__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+  }
+}
+}
+
+.spinner-border{
+   color: var(--link);
+}

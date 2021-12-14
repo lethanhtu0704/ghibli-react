@@ -1,0 +1,68 @@
+.film{
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    max-width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index:-5;
+}
+
+.film--title{
+    color: var(--text-color);
+    z-index: 1;
+    filter: grayscale(0%) opacity(100%);
+    font-size: 2.5rem;
+}
+.film--left{
+    position: relative;
+    width: 60%;
+    &__image{
+        width: 100%;
+        border-radius: 2%;
+    }
+    &__score{
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       top:0;
+       left: 0;
+       width: 4rem;
+       height: 4rem;
+       transform: translate(-25%,-25%);
+       background-color: var(--background-color);
+       border-radius: 50%;
+       font-size: 2rem;
+       font-weight: 500;
+    }
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(120deg, hsla(217, 96%, 81%, 0.329) 0%, rgba(193, 233, 251, 0.342) 100%);
+}
+
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 20%;
+border-radius: 10px;
+    background-image: linear-gradient(to right,rgba(193, 233, 251, 0.116) 0%, var(--background-color) 20%, rgba(193, 233, 251, 0.342) 80%,rgba(193, 233, 251, 0.116) 100%);
+    
+}
